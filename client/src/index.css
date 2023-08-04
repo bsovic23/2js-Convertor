@@ -15,3 +15,31 @@ code {
 /* CSS CODE ======================================================================================================================== */
 
 /* Header ---------------------------------------- */
+.header {
+  background-color: teal;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.header h1, .header p {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+/* Home ------------------------------------------- */
+.home .home-input {
+  text-align: center;
+  margin: 30px;
+}
+
+/* Footer ------------------------------------------ */
+.footer {
+  background-color: aqua;
+}
+
+.footer h2 {
+  text-align: center;
+}
