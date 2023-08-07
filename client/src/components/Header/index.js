@@ -7,7 +7,7 @@ function Header() {
                 <h1>2js-Convertor</h1>
             </div>
             <div>
-                <p>Version 1.01.00</p>
+                <p>Version 1.01.01</p>
             </div>
         </section>
     )
