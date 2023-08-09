@@ -30,6 +30,10 @@ code {
 }
 
 /* Home ------------------------------------------- */
+.home {
+  background-color: #49464652;
+}
+
 .home .home-input {
   text-align: center;
   margin: 30px;
@@ -37,7 +41,9 @@ code {
 
 /* Footer ------------------------------------------ */
 .footer {
-  background-color: aqua;
+  background-color: teal;
+  padding: 20px;
+  border: 2px solid black;
 }
 
 .footer h2 {
