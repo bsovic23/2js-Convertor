@@ -41,6 +41,18 @@ const Home = () => {
       });
         setData(data);
       };
+    
+    const copyToClipboard = () => {
+      if (data) {
+        navigator.clipboard.writeText(JSON.stringify(data, null, 2))
+          .then(() => {
+            alert("JSON Data has been copied to clipboard");
+          })
+          .catch((error) => {
+            console.error('error copying the data', error);
+          });
+      }
+    };
 
     return(
         <section class='home'>
@@ -51,6 +63,9 @@ const Home = () => {
                 <h1>Import Your Excel File Here</h1>
                 <div class="file-input">
                     <input type="file" accept=".xlsx" onChange={handleFileChange} />
+                </div>
+                <div>
+                  <button onClick={copyToClipboard}>COPY JSON TO CLIPBOARD</button>
                 </div>
             </section>
             <section>
